@@ -11,7 +11,6 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-service = Service('/path/to/chromedriver')
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait as wait
 import time
@@ -19,14 +18,13 @@ import time
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 LOGGER.setLevel(logging.WARNING)
-service = Service('/usr/local/bin/chromedriver')
+service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
 service.start()
 # Note option 1:
 # https://stackoverflow.com/questions/63722538/scrapyselenium-how-to-crawl-a-different-page-list-once-im-done-with-one
 # Note option 2 (uses selenium without scrapy)
 # https://www.geeksforgeeks.org/how-to-scrape-multiple-pages-using-selenium-in-python/
-driver = webdriver.Remote(service.service_url)
-driver.get('https://www.footballtransfers.com/en/transfers/latest-football-transfers')
+# driver.get('https://www.footballtransfers.com/en/transfers/latest-football-transfers')
 class WSSpider(CrawlSpider):
     name = 'WSSpider'
 
@@ -35,16 +33,17 @@ class WSSpider(CrawlSpider):
         self.start_urls  = [url]
         self.allowed_domains = ['www.footballtransfers.com']
         self.player_list = {}
+        self.driver = webdriver.Remote(service.service_url)
+
         # self.rules = [
         #     Rule(               
-        #         LinkExtractor(
-        #             # allow= 'confirmed/'
+        #         # LinkExtractor(allow= ['*confirmed/']
         #         ),callback='parse_item', follow=True)]
         self.rules = (
             Rule(
                 LinkExtractor(
                     # restrict_xpaths=(
-                    #     '//div[@class="responsive-table"]'
+                    #     '/tbody[@id="player-table-body"]'
                     # ),
                     # allow= [r'(stat)(\/)(page)(\/)(\d+)$',r'stat$']
                 ),
@@ -56,16 +55,21 @@ class WSSpider(CrawlSpider):
 
     def parse_item(self, response):
         player_name = None
-        print('###############',response.url)
         # TODO : This will loop through the pages , therefore use the driver.get to get for each page using selenium
         player_name_list = response.xpath('//tbody[@id="player-table-body"]/tr/td[1]/div/div/a')
-        for player in player_name_list:
-            print(player.xpath('./@title'))
-            # self.player_list[player.get_attribute('title')] = player.get_attribute('href')
-            yield {'player_name':player.xpath('./@title')}
+        self.driver.get(response.url)
+        self.driver.implicitly_wait(10)
+        player_element = self.driver.find_element(By.XPATH,'//tbody[@id="player-table-body"]/tr/td[1]/div/div/a')
+        print('##############',player_element)
+        self.driver.quit()
+        # for player in player_name_list:
+        #     print(player.xpath('./@title'))
+        #     # self.player_list[player.get_attribute('title')] = player.get_attribute('href')
+        #     yield {'player_name':player.xpath('./@title')}
         # player_transfer_list = response.xpath('//tbody[@id="player-table-body"]/tr')
         # for player in player_transfer_list:
         #     print(player.xpath('./td[1]/div/div').get())
         #     player_name = player.xpath('./td[1]/span/text()').get()
         # Loop through each of the row and get the name,age,fromclub,toclub,date,price 
-driver.quit()
+    
+    
