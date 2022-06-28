@@ -20,26 +20,32 @@ import time
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 LOGGER.setLevel(logging.WARNING)
-# service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
+
+# service = Service('/usr/local/bin/chromedriver')
 # service.start()
+service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
+service.start()
 
 # for holding the resultant list
-element_list = []
+footballtransfer_list = []
   
 for page in range(1, 3, 1):
     
-    page_url = "https://www.footballtransfers.com/en/transfers/confirmed/" + str(page)
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+    page_url = "http://www.footballtransfers.com/en/transfers/confirmed/" + str(page)
+    print(page_url)
+    # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+    driver = webdriver.Remote(service.service_url)
     driver.get(page_url)
-    get_elements = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr//td[1]/div/div/a')))
+
+    get_elements = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr')))
     get_elements_age = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr/td[2]')))
     for each_item in get_elements:
-        print('Player link : ',each_item.get_attribute('href'))
-        print('Player name ',each_item.get_attribute('title'))
+        print('Player link : ',each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('href'))
+        print('Player name : ',each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('title'))
 
-    for each_age in get_elements_age:
-        print('Player Age ',each_age.text)
-    time.sleep(5)
+    # for each_age in get_elements_age:
+    #     print('Player Age ',each_age.text)
+    # time.sleep(5)
 #     price = driver.find_elements_by_class_name("price")
 #     description = driver.find_elements_by_class_name("description")
 #     rating = driver.find_elements_by_class_name("ratings")
