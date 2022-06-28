@@ -17,6 +17,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
+import pandas as pd
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 LOGGER.setLevel(logging.WARNING)
@@ -29,30 +30,36 @@ service.start()
 # for holding the resultant list
 footballtransfer_list = []
   
-for page in range(1, 3, 1):
+for page in range(1, 10, 1):
     
     page_url = "http://www.footballtransfers.com/en/transfers/confirmed/" + str(page)
     print(page_url)
     # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
     driver = webdriver.Remote(service.service_url)
     driver.get(page_url)
+    get_elements = WebDriverWait(driver, 100).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr')))
+    time.sleep(10) # Implemented this t
 
-    get_elements = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr')))
-    get_elements_age = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr/td[2]')))
     for each_item in get_elements:
-        print('Player link : ',each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('href'))
-        print('Player name : ',each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('title'))
+        footballtransfer_dict = {}
 
-    # for each_age in get_elements_age:
-    #     print('Player Age ',each_age.text)
-    # time.sleep(5)
-#     price = driver.find_elements_by_class_name("price")
-#     description = driver.find_elements_by_class_name("description")
-#     rating = driver.find_elements_by_class_name("ratings")
-#     for i in range(len(title)):
-#         element_list.append([title[i].text, price[i].text, description[i].text, rating[i].text])
-  
-# print(element_list)
-  
-#closing the driver
-driver.close()
+        try:
+            footballtransfer_dict['playerlink'] = each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('href')
+            footballtransfer_dict['playername'] = each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('title')
+            footballtransfer_dict['age'] = each_item.find_element(By.XPATH,'td[2]').text
+            footballtransfer_dict['from club'] = each_item.find_element(By.XPATH,'td[3]/div/div[1]/a').get_attribute('title')
+            footballtransfer_dict['to club'] = each_item.find_element(By.XPATH,'td[3]/div/div[2]/a').get_attribute('title')
+            footballtransfer_dict['Date'] = each_item.find_element(By.XPATH,'td[4]').text
+            footballtransfer_dict['MV'] = each_item.find_element(By.XPATH,'td[5]').text
+            print(footballtransfer_dict)
+            footballtransfer_list.append(footballtransfer_dict)
+        except selenium.common.exceptions.NoSuchElementException:
+            pass
+        else:
+            pass
+        finally:
+            pass
+    driver.close()
+
+df = pd.DataFrame(footballtransfer_list)
+df.to_csv('footballtransfer_transfer.csv')

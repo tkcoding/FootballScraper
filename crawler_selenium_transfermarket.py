@@ -24,11 +24,11 @@ from selenium.webdriver.remote.remote_connection import LOGGER
 
 import pandas as pd
 LOGGER.setLevel(logging.WARNING)
-service = Service('/usr/local/bin/chromedriver')
-service.start()
-
-# service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
+# service = Service('/usr/local/bin/chromedriver')
 # service.start()
+
+service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
+service.start()
 
 # for holding the resultant list
 # Name
@@ -74,19 +74,6 @@ for page in range(1, 5, 1):
             pass
         transfer_market_list.append(transfer_dict)
 
-        # print('Player link : ',each_item.get_attribute('href'))
-        # print('Player name ',each_item.get_attribute('title'))
-
-    # for each_age in get_elements_age:
-    #     print('Player Age ',each_age.text)
-
-#     price = driver.find_elements_by_class_name("price")
-#     description = driver.find_elements_by_class_name("description")
-#     rating = driver.find_elements_by_class_name("ratings")
-#     for i in range(len(title)):
-#         element_list.append([title[i].text, price[i].text, description[i].text, rating[i].text])
-  
-# print(element_list)
 
 print(transfer_market_list)
 df = pd.DataFrame(transfer_market_list)
