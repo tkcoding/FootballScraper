@@ -47,8 +47,9 @@ for page in range(1, 10, 1):
             footballtransfer_dict['playerlink'] = each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('href')
             footballtransfer_dict['playername'] = each_item.find_element(By.XPATH,'td[1]/div/div/a').get_attribute('title')
             footballtransfer_dict['age'] = each_item.find_element(By.XPATH,'td[2]').text
-            footballtransfer_dict['from club'] = each_item.find_element(By.XPATH,'td[3]/div/div[1]/a').get_attribute('title')
-            footballtransfer_dict['to club'] = each_item.find_element(By.XPATH,'td[3]/div/div[2]/a').get_attribute('title')
+            footballtransfer_dict['nationality'] = each_item.find_element(By.XPATH,'td[1]/div/div/figure/img').get_attribute('alt')
+            footballtransfer_dict['From club'] = each_item.find_element(By.XPATH,'td[3]/div/div[1]/a').get_attribute('title')
+            footballtransfer_dict['To club'] = each_item.find_element(By.XPATH,'td[3]/div/div[2]/a').get_attribute('title')
             footballtransfer_dict['Date'] = each_item.find_element(By.XPATH,'td[4]').text
             footballtransfer_dict['MV'] = each_item.find_element(By.XPATH,'td[5]').text
             print(footballtransfer_dict)
