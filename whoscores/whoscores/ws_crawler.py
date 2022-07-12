@@ -15,7 +15,7 @@ def football_transfer_crawl(output_path):
     configure_logging()
     settings = get_project_settings()
     # url = 'https://www.transfermarkt.com/uefa/klubrangliste/statistik/stat'
-    url = 'https://www.footballtransfers.com/en/transfers/confirmed'
+    url = 'https://www.footballtransfers.com/en/transfers/latest-football-transfers'
     out_file_path = os.path.join(output_path, 'footballtransfer')
     settings['FEEDS'] = {
         f'{out_file_path}_leagues.json': {

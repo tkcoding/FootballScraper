@@ -17,18 +17,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-
+from selenium.webdriver.chrome.service import Service
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 
 
 import pandas as pd
 LOGGER.setLevel(logging.WARNING)
-# service = Service('/usr/local/bin/chromedriver')
-# service.start()
-
-service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
+service = Service('/usr/local/bin/chromedriver')
 service.start()
+
+# service = Service(r'C:\Program Files (x86)\Google\Chrome\chromedriver.exe')
+# service.start()
 
 # for holding the resultant list
 # Name
@@ -41,13 +41,13 @@ service.start()
 # Price
 transfer_market_list = []
 
-for page in range(1, 5, 1):
+for page in range(1, 10, 1):
     
     page_url = "https://www.transfermarkt.com/transfers/neuestetransfers/statistik?land_id=0&wettbewerb_id=alle&minMarktwert=500000&maxMarktwert=200000000&plus=1&page=" + str(page)
     # driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
     driver = webdriver.Remote(service.service_url)
     driver.get(page_url)
-    get_elements = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//div[@id="yw1"]/table/tbody/tr')))
+    get_elements = WebDriverWait(driver, 100).until(EC.visibility_of_all_elements_located((By.XPATH,'//div[@id="yw1"]/table/tbody/tr')))
     # get_elements_age = WebDriverWait(driver, 20).until(EC.visibility_of_all_elements_located((By.XPATH,'//tbody[@id="player-table-body"]/tr/td[2]')))
     for each_item in get_elements:
         transfer_dict = {}

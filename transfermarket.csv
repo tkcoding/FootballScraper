@@ -1,5 +1,5 @@
 ,Name,Age:,Nationality,From club,To club,Transfer date,Market Value,Fees
-0,Raúl Silva,32,Brazil,GD Estoril Praia,Universitatea Craiova,"Jul 1, 2022",€1.00m,free transfer
+0,Raúl Silva,32,Brazil,SC Braga,Universitatea Craiova,"Jul 1, 2022",€1.00m,free transfer
 1,Vinni Triboulet,23,Cameroon,AS Nancy-Lorraine,Without Club,"Jul 1, 2022",€500Th.,-
 2,Thomas Fontaine,31,Madagascar,AS Nancy-Lorraine,Without Club,"Jul 1, 2022",€500Th.,-
 3,Mamadou Diallo,27,Guinea,Grenoble Foot 38,Without Club,"Jul 1, 2022",€500Th.,-
@@ -100,3 +100,129 @@
 97,Benjamín Rollheiser,22,Argentina,CA River Plate,Club Estudiantes de La Plata,"Jul 1, 2022",€500Th.,free transfer
 98,Alex Cochrane,22,England,Brighton & Hove Albion U23,Heart of Midlothian FC,"Jul 1, 2022",€500Th.,?
 99,Élie Youan,23,France,FC St. Gallen 1879,Hibernian FC,"Jul 1, 2022",€1.00m,loan transfer
+100,Habib Keïta,20,Mali,Olympique Lyon,KV Kortrijk,"Jul 1, 2022",€800Th.,loan transfer
+101,Max de Waal,20,Netherlands,Ajax Amsterdam U21,ADO Den Haag,"Jul 1, 2022",€700Th.,loan transfer
+102,Koki Saito,20,Japan,Lommel SK,Sparta Rotterdam,"Jul 1, 2022",€800Th.,loan transfer
+103,Saeid Sadeghi,28,Iran,Gol Gohar Sirjan FC,Persepolis FC,"Jul 1, 2022",€900Th.,free transfer
+104,Giannis Kargas,27,Greece,PAS Giannina,PAOK Thessaloniki,"Jul 1, 2022",€700Th.,€250Th.
+105,Jan Kuchta,25,Czech Republic,Lokomotiv Moscow,AC Sparta Prague,"Jul 1, 2022",€5.00m,"Loan fee:
+€1.00m"
+106,Maksim Glushenkov,22,Russia,Spartak Moscow,Krylya Sovetov Samara,"Jul 1, 2022",€1.80m,€1.80m
+107,Zian Flemming,23,Netherlands,Fortuna Sittard,Millwall FC,"Jul 1, 2022",€2.00m,€2.90m
+108,John Yeboah,22,Germany,Willem II Tilburg,Slask Wroclaw,"Jul 1, 2022",€500Th.,?
+109,Marcinho,26,Brazil,Without Club,Pafos FC,"Jul 1, 2022",€1.50m,free transfer
+110,Taiwo Awoniyi,24,Nigeria,1.FC Union Berlin,Nottingham Forest,"Jul 1, 2022",€20.00m,€20.50m
+111,Ntsikelelo Nyauza,32,South Africa,Orlando Pirates,Without Club,"Jul 1, 2022",€525Th.,-
+112,Vladislav Sarveli,24,Russia,Krylya Sovetov Samara,FC Sochi,"Jul 1, 2022",€1.80m,€1.20m
+113,Bradley de Nooijer,24,Netherlands,FCV Farul Constanta,CSKA-Sofia,"Jul 1, 2022",€1.50m,€200Th.
+114,Simon Adingra,20,Cote d'Ivoire,FC Nordsjaelland,Brighton & Hove Albion,"Jul 1, 2022",€1.50m,€8.00m
+115,Antonio López,25,Guatemala,CF América,CSD Municipal,"Jul 1, 2022",€500Th.,free transfer
+116,Darline Yongwa,21,Cameroon,Chamois Niortais FC,FC Lorient,"Jul 1, 2022",€1.20m,€1.50m
+117,Zeki Amdouni,21,Switzerland,FC Lausanne-Sport,FC Basel 1893,"Jul 1, 2022",€2.00m,loan transfer
+118,Kevin Spadanuda,25,Switzerland,FC Aarau,AC Ajaccio,"Jul 1, 2022",€550Th.,?
+119,Raúl García,21,Spain,Betis Deportivo Balompié,CD Mirandés,"Jul 1, 2022",€500Th.,?
+120,Zakaria Aboukhlal,22,Morocco,AZ Alkmaar,FC Toulouse,"Jul 1, 2022",€2.00m,€2.00m
+121,Enzo Fernández,21,Argentina,CA River Plate,SL Benfica,"Jul 1, 2022",€15.00m,€10.00m
+122,Vladimir Jovovic,27,Montenegro,FK Sutjeska Niksic,Without Club,"Jul 1, 2022",€550Th.,?
+123,Lucas Alario,29,Argentina,Bayer 04 Leverkusen,Eintracht Frankfurt,"Jul 1, 2022",€8.00m,€6.00m
+124,Andy Rinomhota,25,England,Reading FC,Cardiff City,"Jul 1, 2022",€2.50m,free transfer
+125,Ivan Basic,20,Bosnia-Herzegovina,HSK Zrinjski Mostar,FK Orenburg,"Jul 1, 2022",€800Th.,€550Th.
+126,Florentin Pogba,31,Guinea,FC Sochaux-Montbéliard,ATK Mohun Bagan FC,"Jul 1, 2022",€600Th.,?
+127,Kwadwo Duah,25,Switzerland,FC St. Gallen 1879,1.FC Nuremberg,"Jul 1, 2022",€1.30m,€1.20m
+128,Juan Cazares,30,Ecuador,Metalist Kharkiv (- 2016),Without Club,"Jul 1, 2022",€1.80m,-
+129,Jens Odgaard,23,Denmark,US Sassuolo,AZ Alkmaar,"Jul 1, 2022",€2.00m,€4.10m
+130,Jürgen Damm,29,Mexico,Without Club,CF América,"Jul 1, 2022",€1.20m,-
+131,Lennart Mertens,29,Belgium,KMSK Deinze,Club NXT,"Jul 1, 2022",€750Th.,?
+132,Sardor Rashidov,31,Uzbekistan,Pakhtakor Tashkent,Umm Salal SC,"Jul 1, 2022",€600Th.,?
+133,Maarten Paes,24,Netherlands,FC Utrecht,FC Dallas,"Jul 7, 2022",€900Th.,€1.00m
+134,Salis Abdul Samed,22,Ghana,Clermont Foot 63,RC Lens,"Jul 1, 2022",€3.00m,€5.00m
+135,Alexandru Chipciu,33,Romania,CFR Cluj,FC Universitatea Cluj,"Jul 1, 2022",€650Th.,free transfer
+136,Néstor Araújo,30,Mexico,Celta de Vigo,CF América,"Jul 1, 2022",€4.00m,€3.00m
+137,El-Hadji Ba,29,Mauritania,EA Guingamp,Apollon Limassol,"Jul 1, 2022",€600Th.,free transfer
+138,Frank Boya,25,Cameroon,Royal Antwerp FC,Sint-Truidense VV,"Jul 1, 2022",€650Th.,loan transfer
+139,Eduard Löwen,25,Germany,Hertha BSC,St. Louis CITY SC,"Jul 7, 2022",€2.00m,€1.00m
+140,Simone Romagnoli,32,Italy,FC Empoli,Parma Calcio 1913,"Jul 1, 2022",€1.00m,free transfer
+141,Milad Zakipour,26,Iran,Gol Gohar Sirjan FC,Sepahan FC,"Jul 1, 2022",€600Th.,free transfer
+142,Alessandro Tripaldelli,23,Italy,Cagliari Calcio,SPAL,"Jul 1, 2022",€750Th.,€300Th.
+143,Luca Ceppitelli,32,Italy,Cagliari Calcio,Without Club,"Jul 1, 2022",€800Th.,-
+144,Ibrahim Dresevic,25,Kosovo,SC Heerenveen,Fatih Karagümrük,"Jul 1, 2022",€800Th.,free transfer
+145,Darragh Lenihan,28,Ireland,Blackburn Rovers,Middlesbrough FC,"Jul 1, 2022",€3.00m,free transfer
+146,Sammy Ameobi,30,England,Middlesbrough FC,Without Club,"Jul 1, 2022",€500Th.,-
+147,Kilian Ludewig,22,Germany,Red Bull Salzburg,Aalborg BK,"Jul 1, 2022",€600Th.,loan transfer
+148,Andreas Gruber,26,Austria,LASK,Austria Vienna,"Jul 1, 2022",€800Th.,?
+149,Damir Ceter,24,Colombia,Cagliari Calcio,Without Club,"Jul 1, 2022",€600Th.,-
+150,Yoric Ravet,32,France,Grenoble Foot 38,Without Club,"Jul 1, 2022",€600Th.,-
+151,Stéphane Lambese,26,Haiti,Quevilly Rouen Métropole,Without Club,"Jul 1, 2022",€500Th.,-
+152,Jimmy Giraudon,30,France,ESTAC Troyes,AS Saint-Étienne,"Jul 1, 2022",€1.50m,free transfer
+153,Dani Raba,26,Spain,Granada CF,CD Leganés,"Jul 1, 2022",€900Th.,free transfer
+154,Filip Nguyen,29,Czech Republic,FC Slovan Liberec,1.FC Slovacko,"Jul 1, 2022",€700Th.,€200Th.
+155,Leandro Silva,28,Portugal,FC Arouca,Hapoel Haifa,"Jul 1, 2022",€600Th.,?
+156,Daniel Amador,25,Mexico,CD Leones Negros de la UdeG,Correcaminos de la UAT,"Jul 1, 2022",€700Th.,?
+157,Dogan Erdogan,25,Turkey,Gaziantep FK,Without Club,"Jul 1, 2022",€1.10m,-
+158,José Luis Morales,34,Spain,Levante UD,Villarreal CF,"Jul 1, 2022",€4.00m,free transfer
+159,Pierre-Yves Hamel,28,France,FC Lorient,Paris FC,"Jul 1, 2022",€1.20m,€1.00m
+160,Philip Zinckernagel,27,Denmark,Watford FC,Olympiacos Piraeus,"Jul 1, 2022",€3.00m,€2.00m
+161,Andreas Leitner,28,Austria,FC Admira Wacker Mödling,Without Club,"Jul 1, 2022",€600Th.,-
+162,Andrija Radulovic,19,Serbia,Red Star Belgrade,FK Mladost GAT Novi Sad,"Jul 1, 2022",€800Th.,loan transfer
+163,Eric Martel,20,Germany,RB Leipzig,1. FC Köln,"Jul 1, 2022",€3.00m,€1.20m
+164,Armindo Sieb,19,Germany,FC Bayern Munich II,SpVgg Greuther Fürth,"Jul 1, 2022",€1.50m,?
+165,Juan Brunetta,25,Argentina,CD Godoy Cruz Antonio Tomba,Santos Laguna,"Jul 1, 2022",€2.00m,loan transfer
+166,Ole Selnaes,27,Norway,Shenzhen FC,FC Zürich,"Jul 1, 2022",€2.00m,free transfer
+167,Timothy Fayulu,22,Switzerland,FC Sion,FC Winterthur,"Jul 1, 2022",€600Th.,loan transfer
+168,Pipa,24,Spain,Huddersfield Town,Olympiacos Piraeus,"Jul 1, 2022",€2.00m,€1.00m
+169,Anthony Mandréa,25,Algeria,Angers SCO,SM Caen,"Jul 1, 2022",€1.00m,free transfer
+170,Omar Fernández,29,Colombia,Club León FC,Puebla FC,"Jul 1, 2022",€3.50m,loan transfer
+171,Lazare Amani,24,Cote d'Ivoire,RSC Charleroi,Royale Union Saint Gilloise,"Jul 1, 2022",€1.50m,?
+172,Yanis Barka,24,France,AS Beauvais Oise,Paris 13 Atletico,"Jul 1, 2022",€600Th.,free transfer
+173,Joshua Kitolano,20,Norway,Odds BK,Sparta Rotterdam,"Aug 1, 2022",€800Th.,?
+174,Tobias Lauritsen,24,Norway,Odds BK,Sparta Rotterdam,"Aug 1, 2022",€500Th.,?
+175,Borislav Tsonev,27,Bulgaria,Chornomorets Odessa,Without Club,"Jul 1, 2022",€800Th.,-
+176,Edison Flores,28,Peru,D.C. United,Atlas Guadalajara,"Jul 1, 2022",€2.50m,?
+177,Ryan Giles,22,England,Wolverhampton Wanderers U23,Middlesbrough FC,"Jul 1, 2022",€3.00m,loan transfer
+178,Nick Pope,30,England,Burnley FC,Newcastle United,"Jul 1, 2022",€15.00m,€11.50m
+179,Carlens Arcus,26,Haiti,AJ Auxerre,Vitesse Arnhem,"Jul 1, 2022",€1.80m,free transfer
+180,Jonathan Okita,25,DR Congo,NEC Nijmegen,FC Zürich,"Jul 1, 2022",€800Th.,free transfer
+181,Senna Miangue,25,Belgium,Cagliari Calcio,Cercle Brugge ,"Jul 1, 2022",€800Th.,€300Th.
+182,Juraj Kucka,35,Slovakia,Parma Calcio 1913,Slovan Bratislava,"Jul 1, 2022",€1.80m,free transfer
+183,Jordi Osei-Tutu,23,England,Arsenal FC U23,VfL Bochum,"Jul 1, 2022",€1.00m,free transfer
+184,Ravil Tagir,19,Turkey,Istanbul Basaksehir FK,KVC Westerlo,"Jul 1, 2022",€1.60m,loan transfer
+185,Martin Lukov,28,Bulgaria,Arda Kardzhali,Karmiotissa Pano Polemidion,"Jul 1, 2022",€700Th.,free transfer
+186,Solomon Kvirkvelia,30,Georgia,FC Gagra,Without Club,"Jul 1, 2022",€1.00m,-
+187,Julius Szöke,26,Slovakia,Ironi Kiryat Shmona,Aris Limassol,"Jul 1, 2022",€750Th.,?
+188,Anton Zinkovskiy,26,Russia,Krylya Sovetov Samara,Spartak Moscow,"Jul 1, 2022",€3.50m,€3.20m
+189,Bojan Miovski,23,North Macedonia,MTK Budapest,Aberdeen FC,"Jul 1, 2022",€700Th.,€600Th.
+190,Florian Kamberi,27,Albania,FC St. Gallen 1879,FC Winterthur,"Jul 1, 2022",€550Th.,free transfer
+191,Dennis Borkowski,20,Germany,RB Leipzig,SG Dynamo Dresden,"Jul 1, 2022",€500Th.,loan transfer
+192,Gui,20,Portugal,Vitória Guimarães SC,UD Almería,"Jul 1, 2022",€500Th.,€3.00m
+193,Manoubi Haddad,25,Tunisia,Quevilly Rouen Métropole,Without Club,"Jul 1, 2022",€500Th.,-
+194,Billy Koumetio,19,France,Liverpool FC U23,Austria Vienna,"Jul 1, 2022",€800Th.,loan transfer
+195,Yeni N'Gbakoto,30,DR Congo,AS Nancy-Lorraine,Western Sydney Wanderers,"Jul 1, 2022",€600Th.,free transfer
+196,Francesco Margiotta,28,Italy,Melbourne Victory,Without Club,"Jul 1, 2022",€550Th.,-
+197,Mika Biereth,19,Denmark,Arsenal FC U23,RKC Waalwijk,"Jul 1, 2022",€600Th.,loan transfer
+198,Samuele Perisan,24,Italy,Pordenone Calcio,FC Empoli,"Jul 1, 2022",€700Th.,?
+199,Jan-Marc Schneider,28,Germany,PAS Giannina,Without Club,"Jul 1, 2022",€500Th.,-
+200,Caleb Stanko,28,United States,PAS Giannina,Without Club,"Jul 1, 2022",€500Th.,-
+201,Jed Wallace,28,England,Millwall FC,West Bromwich Albion,"Jul 1, 2022",€6.50m,free transfer
+202,Michael Smith,30,England,Rotherham United,Sheffield Wednesday,"Jul 1, 2022",€700Th.,free transfer
+203,Stefan Ilsanker,33,Austria,Eintracht Frankfurt,Genoa CFC,"Jul 1, 2022",€1.00m,free transfer
+204,Nikolas Spalek,25,Slovakia,Brescia Calcio,Without Club,"Jul 1, 2022",€900Th.,-
+205,Marvin Zeegelaar,31,Netherlands,Udinese Calcio,Without Club,"Jul 1, 2022",€800Th.,-
+206,Maya Yoshida,33,Japan,UC Sampdoria,Without Club,"Jul 1, 2022",€1.50m,-
+207,Diego Perotti,33,Argentina,US Salernitana 1919,Without Club,"Jul 1, 2022",€500Th.,-
+208,Sebastien Thill,28,Luxembourg,FC Progrès Niederkorn,FC Hansa Rostock,"Jul 1, 2022",€2.00m,?
+209,Rodrigo Godínez,29,Mexico,CD Leones Negros de la UdeG,Club Tijuana,"Jul 1, 2022",€600Th.,free transfer
+210,Javier Salas,28,Mexico,Puebla FC,FC Juárez,"Jul 1, 2022",€2.30m,?
+211,Jair Díaz,23,Mexico,Tigres UANL,Club Tijuana,"Jul 1, 2022",€800Th.,?
+212,Raúl Loaiza,28,Colombia,Defensa y Justicia,Club Atlético Lanús,"Jul 1, 2022",€700Th.,?
+213,Bryan Castrillón,23,Colombia,Independiente Medellín,Club Atlético Unión,"Jul 1, 2022",€500Th.,loan transfer
+214,Jhon Jairo Velásquez,27,Colombia,Independiente Santa Fe,SC Farense,"Jul 1, 2022",€600Th.,?
+215,Luiz Felipe,25,Italy,SS Lazio,Without Club,"Jul 1, 2022",€16.00m,-
+216,Marcel Ruiz,21,Mexico,Club Tijuana,Deportivo Toluca,"Jul 1, 2022",€3.50m,?
+217,Ki-Jana Hoever,20,Netherlands,Wolverhampton Wanderers,PSV Eindhoven,"Jul 1, 2022",€6.00m,loan transfer
+218,Rodrigo Dourado,28,Brazil,Sport Club Internacional,Atlético de San Luis,"Jul 1, 2022",€3.00m,€500Th.
+219,Paul McGinn,31,Scotland,Hibernian FC,Motherwell FC,"Jul 1, 2022",€500Th.,free transfer
+220,João Marcelo,22,Brazil,Tombense Futebol Clube (MG),FC Porto,"Jul 1, 2022",€550Th.,€500Th.
+221,Mounir El Allouchi,27,Netherlands,FAR Rabat,Karmiotissa Pano Polemidion,"Jul 1, 2022",€500Th.,?
+222,Tiago Dantas,21,Portugal,SL Benfica,PAOK Thessaloniki,"Jul 1, 2022",€2.50m,loan transfer
+223,Tomás Domingos,23,Portugal,CD Mafra,CD Santa Clara,"Jul 1, 2022",€500Th.,free transfer
+224,Tyreece John-Jules,21,England,Arsenal FC U23,Ipswich Town,"Jul 1, 2022",€800Th.,loan transfer
